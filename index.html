@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt's Website :)</title>
+  <meta name="description" content="Personal site of Matt Post - Senior Software Engineer.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23161b22'/><text x='16' y='22' font-family='sans-serif' font-size='18' font-weight='bold' fill='%2358a6ff' text-anchor='middle'>M</text></svg>">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="brand-link">Matt Post</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+          <li><a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/mattpost1700" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub ↗</a></li>
+          <li>
+            <button class="theme-btn" id="theme-btn" aria-label="Toggle Theme">
+              <span id="theme-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                </svg>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Intro -->
+    <section class="hero-section">
+      <div class="hero-profile-row">
+        <div class="avatar-box" title="Matt Post">
+          <img src="assets/images/headshot.jpg" alt="Matt Post" class="avatar-img" id="avatar-img">
+        </div>
+        <div class="hero-title-group">
+          <h1 class="hero-name">Matt Post</h1>
+          <p class="hero-role">Senior Software Engineer at Lockheed Martin Space</p>
+        </div>
+      </div>
+      <p class="hero-summary">
+        Building distributed systems, sensor processing pipelines, and geospatial tooling. Focused on clean architecture, Python microservices, and Kubernetes.
+      </p>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <span style="color: var(--border);">/</span>
+        <a href="https://github.com/mattpost1700" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+
+    <!-- Projects (Boxed style) -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-list">
+        
+        <!-- BoxArea -->
+        <article class="project-item">
+          <div class="project-header">
+            <h3 class="project-name">BoxArea</h3>
+            <span class="project-status" style="color: #3fb950;"> Live</span>
+          </div>
+          <p class="project-desc">
+            Geographic Information System (GIS) application for interactive polygon rendering and inspection of municipal boundary layers across Dauphin County fire departments and coverage areas.
+          </p>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Python</span>
+            <span class="tag">Leaflet GIS</span>
+            <span class="tag">GeoJSON</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://boxarea.tail0d01bd.ts.net/" target="_blank" rel="noopener noreferrer">Live App ↗</a>
+            <a href="projects/boxarea.html">Details →</a>
+            <a href="https://github.com/mattpost1700/BoxArea" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- PerDiemTracker -->
+        <article class="project-item">
+          <div class="project-header">
+            <h3 class="project-name">PerDiemTracker</h3>
+            <span class="project-status">Coming to an App Store near you!</span>
+          </div>
+          <p class="project-desc">
+            Application for tracking government per diem rates, lodging allowances, and business travel expenses. Coming to the App Store (and Web!).
+          </p>
+          <div class="project-tags">
+            <span class="tag">Android</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Web App (TBD)</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects/perdiemtracker.html">Details →</a>
+            <a href="https://github.com/mattpost1700" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Work History -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list">
+        
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Lockheed Martin Space</span>
+            <span class="exp-date">May 2022 – Present</span>
+          </div>
+          <span class="exp-role">Senior Software Engineer</span>
+          <p class="exp-note">Sensor processing, Kubernetes microservices, satellite imagery, and distributed data pipelines.</p>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">The Pennsylvania State University</span>
+            <span class="exp-date">Jun 2024 – Dec 2024</span>
+          </div>
+          <span class="exp-role">Adjunct Professor</span>
+          <p class="exp-note">Instructed senior-level Software Engineering and Design course (CMPSC 487W).</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 1.25rem; font-size: 0.9rem;">
+        <a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer">Full career details & history on LinkedIn →</a>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="experience-list">
+        
+        <!-- MS -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">M.S. in Computer Science</span>
+            <span class="exp-date">2022 – 2023</span>
+          </div>
+          <div class="exp-subrow">
+            <span class="exp-role">Pennsylvania State University - Capital College</span>
+            <span class="gpa-pill">GPA 3.83</span>
+          </div>
+        </div>
+
+        <!-- BS -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">B.S. in Computer Science</span>
+            <span class="exp-date">2018 – 2022</span>
+          </div>
+          <div class="exp-subrow">
+            <span class="exp-role">Pennsylvania State University - Schreyer Honors College</span>
+            <span class="gpa-pill">GPA 3.92</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Computer Science Outstanding Undergraduate Student Award for 2021/2022</li>
+            <li>Student Marshal for the School of Science, Engineering, and Technology</li>
+            <li>Magna cum laude</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section" id="research">
+      <h2 class="section-title">Research</h2>
+      <div class="experience-list">
+        
+        <!-- Master's Research Paper -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Implications of Large Language Models on Plagiarism Detection in Coding Competitions</span>
+            <span class="exp-date">2023</span>
+          </div>
+          <span class="exp-role">Master's Research Paper - Penn State Harrisburg</span>
+          <p class="exp-note">Investigated generative AI and LLM code synthesis impacts on plagiarism evaluation benchmarks and competitive programming submission integrity.</p>
+        </div>
+
+        <!-- Robotics Research Paper -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Modeling and Model Checking Verification for Obstacle Avoidance in Autonomous Robotics Systems</span>
+            <span class="exp-date">2022</span>
+          </div>
+          <span class="exp-role">Research Paper</span>
+          <p class="exp-note">Formal verification and UPPAAL timed-automata model checking for obstacle avoidance in autonomous robotics navigation.</p>
+        </div>
+
+        <!-- Honors Thesis & Poster -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Effective Network Configuration Strategies for the Mitigation of Denial-of-Service Attacks</span>
+            <span class="exp-date">2020 – 2022</span>
+          </div>
+          <span class="exp-role">Honors Thesis & Poster - Schreyer Honors College</span>
+          <p class="exp-note">Game-theoretic regret minimization (Colonel Blotto / Nash Equilibrium) for defensive network configurations under DoS attacks.</p>
+          <div class="award-callout">
+            <div>• Jeffery and Jean Merritt Honors Thesis Award</div>
+            <div>• University Libraries John Sr. and Kimlyn Patishnock Undergraduate Research Award</div>
+          </div>
+        </div>
+
+        <!-- FIU Research Poster -->
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Deception-Based Strategies for Wireless Networks</span>
+            <span class="exp-date">Summer 2021</span>
+          </div>
+          <span class="exp-role">Research Poster - Florida International University (NSF REU)</span>
+          <p class="exp-note">Game-theoretic deception models and regret minimization algorithms evaluating decoy honeypot allocation and network robustness against cyber attacks.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 1.25rem; font-size: 0.9rem;">
+        <a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer">Full research background & academic details on LinkedIn →</a>
+      </div>
+    </section>
+
+    <!-- Volunteer Section (Formatted like Experience section) -->
+    <section class="section" id="volunteer">
+      <h2 class="section-title">Volunteer</h2>
+      <div class="experience-list">
+        
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-company">Lower Swatara Volunteer Fire Department</span>
+            <span class="exp-date">Jun 2021 – Present</span>
+          </div>
+          <span class="exp-role">Fire Lieutenant</span>
+          <p class="exp-note">Volunteer firefighter and EMT.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect on LinkedIn -->
+    <section class="connect-callout">
+      <div class="connect-box">
+        <p>Want to connect, chat about engineering, or see more of my background?</p>
+        <a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>Connect with me on LinkedIn ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">
+        <span>© <span id="current-year">2026</span> Matt Post</span>
+      </div>
+      <div class="footer-center">
+        <span>Last updated: <span id="last-updated">October 2026</span></span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthew-post/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span style="color: var(--border); margin: 0 0.4rem;">•</span>
+        <a href="https://github.com/mattpost1700" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
